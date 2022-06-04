@@ -10,9 +10,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", (request, response) => {
-    response.redirect(`http://www.theshaheenbuilders.com/OTPVerification.php?Id=${request.query.Id}`);
+    response.redirect(`http://www.theshaheenbuilders.com/`);
+    //OTPVerification.php?Id=${request.query.Id}
 });
 
 app.listen(port, () => {
-    console.log("Server is running on port: " + port)
+    console.log("Server is running on port: ." + port)
 })
