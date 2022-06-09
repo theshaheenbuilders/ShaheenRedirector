@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", (request, response) => {
-    response.redirect(`http://www.fileverification.theshaheenbuilders.com/OTPVerification.php?Id=${request.query.Id}`);
+    response.redirect(`http://fileverification.theshaheenbuilders.com/OTPVerification.php?Id=${request.query.Id}`);
+    //add tnhis
     //OTPVerification.php?Id=${request.query.Id}
 });
 
