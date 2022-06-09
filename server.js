@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", (request, response) => {
     response.redirect(`http://fileverification.theshaheenbuilders.com/OTPVerification.php?Id=${request.query.Id}`);
+    int a;
     //add tnhis
     //OTPVerification.php?Id=${request.query.Id}
 });
